@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="sl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<title>Beleženje stroškov</title>
+</head>
+
+<body>
+    <header class="col-12 col-s-12">
+        <h1>Dodajanje stroškov</h1>
+    </header>
+    <div class="row">
+        <nav class="col-2 col-s-2">
+            <a href="index.html">Pregled stroškov</a>
+            <a href="vnos.html">Vnos podatkov</a>
+            <a href="grafi.html">Grafi</a>
+            <a href="viri.html">Viri</a>
+            
+          </nav>
+        <div class="col-8 col-s-10 main">
+            <fieldset>
+                <legend>Dodajte nov strošek</legend>
+                <label for="cost_type">Vrsta stroška:  </label>
+                <select id="cost_type" name="Vrsta">
+                    <option selected="selected">Hrana in pijača</option>
+                    <option>Prevoz</option>
+                    <option >Ostalo</option>
+                </select> 
+
+                <br>
+
+                <label for="date">Date:  </label>
+                <input id="date" type="date" autofocus required>
+                <br>
+                <label for="opis">Opis:  </label>
+                <input  id="opis" type="text" required >        
+                <br>
+                <label for="price">Cena (€):  </label>
+                <input id="price" type="number" step="0.01"min="0.01" >
+                <br>
+                <br>
+                <button id="addButton">Dodaj strošek</button>
+                </fieldset>
+
+        </div>
+        <aside class="col-2 col-s-12">
+            
+          </aside>
+    </div>
+    <footer class="col-12 col-s-12">© Žan Ostrožnik 63180217</footer>
+	
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script src="vnos.js"></script>
+</body>
+
+</html>

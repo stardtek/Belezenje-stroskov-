@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="sl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Beleženje stroškov</title>
+    
+</head>
+
+<body>
+    <header class="col-12 col-s-12">
+        <h1>Pregled stroškov</h1>
+    </header>
+    <div class="row">
+        <nav class="col-2 col-s-3">
+            <a href="index.html">Pregled stroškov</a>
+            <a href="vnos.html">Vnos podatkov</a>
+            <a href="grafi.html">Grafi</a>
+            <a href="viri.html">Viri</a>
+            <a >Z dvojnim klikom na polje <br>odstranimo vnos v tabeli.</a>
+            <button id="revers">Obratno sortiraj tabele</button>
+            
+          </nav>
+        <div class="main col-8 col-s-9">
+            <table id="hrana_pijaca">
+                <caption>Stroški hrane in pijače.</caption>
+                <tr>
+                    <th>Datum</th>
+                    <th>Opis</th>
+                    <th>Cena (€)</th>
+                </tr>
+
+            </table>
+            <br>
+            <table id="prevoz">
+                <caption>Stroški prevoza.</caption>
+                <tr>
+                    <th>Datum</th>
+                    <th>Opis</th>
+                    <th>Cena (€)</th>
+                </tr>
+
+            </table>
+            <br>
+            <table id="ostalo">
+                <caption>Ostali stroški.</caption>
+                <tr>
+                    <th>Datum</th>
+                    <th>Opis</th>
+                    <th>Cena (€)</th>
+                </tr>
+
+            </table>
+        </div>
+        <aside id="stranski" class="col-2 col-s-12">
+            <h2>Zadnjih 5 stroškov</h2>
+            <h3 id="zadnji">Datum: Opis: Cena (€)<br></h3>
+            
+          </aside>
+    </div>
+    <footer class="col-12 col-s-12">© Žan Ostrožnik 63180217</footer>
+	
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script src="script.js"></script>
+</body>
+
+</html>

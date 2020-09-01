@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="sl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<title>Beleženje stroškov</title>
+</head>
+
+<body>
+    <header class="col-12 col-s-12">
+        <h1>Pregled stroškov grafi</h1>
+    </header>
+    <div class="row">
+        <nav class="col-2 col-s-3">
+            <a href="index.html">Pregled stroškov</a>
+            <a href="vnos.html">Vnos podatkov</a>
+            <a href="grafi.html">Grafi</a>
+            <a href="viri.html">Viri</a>
+            
+          </nav>
+        <div class="main col-8 col-s-9">
+            <h2 id="naslov">Graf</h2>
+            <canvas id="graf" width="1200" height="500"></canvas>
+           
+        </div>
+        <aside class="col-2 col-s-12">
+            <button id="poDnevih">Po dnevih</button>
+            <br>
+            <button id="hrana">Hrana in pijača</button>
+            <br>
+            <button id="prevoz">Prevoz</button>
+            <br>
+            <button id="ostalo">Ostalo</button>
+          </aside>
+    </div>
+    <footer class="col-12 col-s-12">© Žan Ostrožnik 63180217</footer>
+	
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script src="grafi.js"></script>
+</body>
+
+</html>
